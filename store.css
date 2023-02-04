@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=DM+Serif+Display&family=Itim&family=Libre+Baskerville:ital@1&family=PT+Serif:ital@1&family=Playfair+Display&display=swap");
+
+:root{
+    --font-1:'Bitter', serif;
+    --font-2:'PT Serif', serif;
+    --font-3:'DM Serif Display', serif;
+    --font-4:'Itim', cursive;
+    --font-5:'Libre Baskerville', serif;
+    --font-6:'Playfair Display', serif;
+    --color-1:#57DDF3;
+    --color-2:#14C2DD;
+    --color-3:#A1F7A1;
+    --color-4:#3E7AB0;
+    --white:#f2f7f6;
+}
+.abt-container{
+    background-color: var(--white);
+    height: auto;
+}
+.logo img{
+    width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   margin: 0.5em 0em 0em 0.5em;
+}
+.N-p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--color-2);
+    padding: 0.6em 0px 0.5em 0px ;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+.menu a{
+    text-decoration: none;
+    color: var(--white);
+    font: var(--font-4);
+
+}
+/* .footer {
+    background-color: ;
+} */
