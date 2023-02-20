@@ -43,18 +43,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: var(--color-2);
     padding: 0.6em 0px 0.5em 0px ;
     border-top-right-radius: 1em;
     border-bottom-left-radius: 1em;
 }
 .menu a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--color-4);
     font-family: var(--font-4);
-    background-color: var(--color-4);
+    font-size: larger;
     padding: 3px;
     border-radius: 1em;
+}
+.menu a:hover{
+    text-decoration: underline;
+    transition: ease-in-out;
 }
 .bg-p{
     width: 100%;
@@ -127,4 +130,64 @@ color: var(--color-4);
     text-decoration: none;
     font-family: var(--font-3);
     color: var(--color-4);
+}
+
+/* contact_us css */
+.c-first{
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/pexels-craig-adderley-1727684.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 2em;
+}
+.con-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(242, 245, 244);
+    align-items: center;
+}
+.con-top a{
+    text-decoration: none;
+    font-family: var(--font-1); 
+}
+.c-logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 5px 0px 0px 5px;
+}
+.c-menu{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+.c-cart{
+    margin: 5px 5px 0px 0px;
+}
+.c-sec{
+    display: flex;
+    flex-direction: row;
+}
+.c-form{
+    display: flex;
+    flex-direction: column;
+}
+.c-mess{
+    width: 50%;
+}
+.c-handles{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.c-h-con{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
