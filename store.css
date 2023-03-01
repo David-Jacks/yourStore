@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=DM+Serif+Display&family=Itim&family=Libre+Baskerville:ital@1&family=PT+Serif:ital@1&family=Playfair+Display&display=swap");
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: var(--font-1);
+}
 :root{
     --font-1:"Bitter", serif;
     --font-2:'PT Serif', serif;
@@ -16,6 +21,445 @@
 body{
     background-color: rgba(242, 245, 244);
 }
+/* index page css */
+::-webkit-scrollbar{
+    display: none;
+}
+.landing-page{
+    width: 100%;
+    height: 100dvh;
+    background-image: url("./assets/pexels-roberto-nickson-2885320.jpg");
+    background-position: center;
+    background-size:cover ;
+}
+.head{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    background: transparent;
+    z-index: 1005454;
+}
+.cover-up{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    background: rgb(19, 16, 16);
+    z-index: 1005454;
+}
+.cover-for-head{
+    width: 100%;
+    height: 10vh;
+    background: transparent;
+}
+.main-logo span{
+    color: gold;
+    margin-left: 8px;
+   font-size: 30px;
+    border-radius: 50%;
+    font-family: var(--font-6);
+}
+.nav-bar{
+    width: 40%;
+    display: flex;
+    font-display: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-family: var(--font-2);
+    
+}
+.nav-bar a::after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 2px;
+    transition: all .5s ease;
+    opacity: 0;
+}
+.nav-bar a::before{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 2px;
+    transition: all .4s ease;
+    opacity: 0;
+}
+@media (hover: hover){
+    .nav-bar a:hover{
+        color: gold;
+    }
+    .nav-bar a:hover:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        height: 2px;
+        opacity: 1;
+    
+    }
+    .nav-bar a:hover:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        height: 2px;
+        opacity: 1;
+    
+    }
+}
+.search-bar{
+    width: max-content;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+}
+.search-bar input{
+    border: none;
+    outline: none;
+    height: 30px;
+}
+.search-in::placeholder{
+    color: #153f15;
+    font-family: var(--font-3);
+    transform: translateX(50px)  translateY(-5px);
+    font-size: 15px;
+    transition: .5s ease;
+}
+.search-bar i{
+    transform: translateX(-220px);
+    color: #050505;
+    height: 100%;
+    transition: .5s ease;
+}
+.search-bar input:focus~.fa-sharp{
+    transform: translateX(0px);
+}
+/* i will come to this later */
+.search-bar input:focus~.search-in::placeholder{
+    transform: translateX(0px)  translateY(-5px);
+}
+.main-container{
+    position: relative;
+    top: 0;
+    width: 80%;
+    height: 70vh;
+    background-image: url("./assets/pexels-roberto-nickson-2885320.jpg");
+    background-position: center;
+    background-size:cover ;
+    margin: 4% auto;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    border-radius: 1em;
+    font-size: 18px;
+    overflow: hidden;
+}
+.half-con{
+    width: 56%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   gap: 1em;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+.welc{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    height: 30%;
+    justify-content: space-around;
+    /* transform: translateX(-100px);  */
+}
+.welc b{
+    font-size: larger;
+    font-family: var(--font-4);
+}
+.dont{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1;
+    line-height: 2.5;
+}
+.dont span:nth-child(1){
+    font-size: 30px;
+    transform: translate(20px, -10px);
+    font-family: var(--font-4);
+}
+.half-con img{
+    width: 30px;
+    height: 30px;
+}
+.first-half{
+display: flex;
+align-items: flex-start;
+}
+.other-con{
+    width: calc(100% - 56%);
+    height: 100%;
+    position: relative;
+}
+.another >span, .sign-up-form>span{
+    font-size: x-large;
+    font-family: var(--font-1);
+}
+.another{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5em;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+.m-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    position: relative;
+}
+.sec{
+    position: relative;
+    top: 0;
+}
+.label{
+    position: absolute;
+    top:0px;
+    left: 5px;
+    color: rgb(9, 9, 239) ;
+    transition: transform .5s ease;
+}
+.sec input{
+    outline: none;
+    border: none;
+    height: 30px;
+    padding-left:5px ;
+}
+.sec input:focus~.label,
+.sec input:valid~.label{
+    transform: translateY(-35px);
+    color: white;
+}
+.form-btn>a:nth-child(1){
+   color: #0d6b58;
+   text-decoration: none;
+   position: relative;
+   top:-20px;
+    border: none;
+    width: fit-content;
+    padding: 3px 6px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.sign-up,.sign-in{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(241, 210, 8);
+    font-weight: 900;
+}
+.other-con .sign-up-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 434px;
+    transition: all .5s ease;
+}
+.swap .sign-up-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.swap .another{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5em;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 434px;
+}
+.layout{
+    background-color: var(--white);
+    width: 100%;
+    height: auto;
+}
+.lay-head{
+    text-align: center;
+}
+.act-lay{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.product{
+    width: calc(33.33% - 10px);
+    height: 250px;
+    margin-bottom: 20px;
+    background-color: blue;
+}
+.main-footer{
+    width: 100%;
+    height: auto;
+    background-color: #010f18d7;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-bottom: 10px;
+}
+.main-footer > div{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding: 10px;
+   
+}
+.main-footer .about-m{
+    flex-direction: column;
+    gap: 10px;
+}
+.about-m a{
+text-decoration: none;
+color: gold;
+width: fit-content;
+transition: all 1s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+@media(hover: hover){
+    .about-m a:hover{
+        color: rgb(216, 214, 197);
+        }
+}
+.about-m span{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.main-footer .sendMessage{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.feed-btn{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: var(--font-5);
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+    padding: 3px 4px ;
+    transition: all 1s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    display: none;
+    opacity: 0;
+}
+@media(hover: hover){
+    .feed-btn:hover{
+        background-color: black;
+        color: gold;
+    }
+}
+.sendMessage .first-m{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.second-m{
+    width: fit-content;
+}
+.first-m textarea{
+  border-radius: 2px;
+    outline: none;
+    border: none;
+    padding: 3px 5px;
+    resize: none;
+}
+.first-m textarea::placeholder{
+    color: black;
+}
+.first-m textarea:focus~ .feed .feed-btn{
+        display: flex;
+        width: fit-content;
+        opacity: 1;
+}
+
+.main-footer .payment-ops{
+    flex-direction: column;
+    align-items: center;
+}
+.payment-ops h3{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about page css  */
 .space{
     width: 100%;
     height: 2em;
@@ -128,7 +572,7 @@ color: var(--color-4);
 
 
 /* contact_us css */
-h3{
+.c-sec h3{
     font-family: var(--font-5);
 }
 .c-first{
