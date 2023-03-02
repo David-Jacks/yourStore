@@ -1,14 +1,14 @@
 const signUp = document.querySelectorAll(".sign-up");
 const signIn = document.querySelectorAll(".sign-in");
 const change = document.querySelectorAll(".other-con");
-signUp.forEach((signUp, i) => {
+signUp.forEach((signUp, index) => {
   signUp.addEventListener("click", () => {
-    change[i].classList.add("swap");
+    change[index].classList.add("swap");
   });
 });
-signIn.forEach((signIn, i) => {
+signIn.forEach((signIn, index) => {
   signIn.addEventListener("click", () => {
-    change[i].classList.remove("swap");
+    change[index].classList.remove("swap");
   });
 });
 
@@ -42,14 +42,3 @@ closed.forEach((closed, index) => {
     interest[index].innerHTML = "interested";
   });
 });
-// interest.addEventListener("click", () => {
-//   price.classList.add("o-price");
-//   image.classList.add("shift");
-//   document.querySelector(".interest").innerHTML = " ";
-// });
-
-// closed.addEventListener("click", () => {
-//   price.classList.remove("o-price");
-//   image.classList.remove("shift");
-//   document.querySelector(".interest").innerHTML = "interested";
-// });
