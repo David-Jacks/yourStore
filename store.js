@@ -43,13 +43,14 @@ closed.forEach((closed, index) => {
   });
 });
 
+///cart javascript
 //carousel from owl libraries
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     autoplay: true,
     autoplayTimeout: 3500,
     responsive: {
