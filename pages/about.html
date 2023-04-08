@@ -5,25 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="../store.css">
     <title>About</title>
 </head>
 <body>
     <div class="abt-container container">
-        <!-- nav section part -->
-        <div class="N-p">
-            <div class="logo">
-                <img src="../assets/pexels-craig-adderley-1727684.jpg" alt="">
+        <header class="container head">
+            <div class="main-logo">
+                <span>Lancaster Store</span>
             </div>
-            <div class="menu">
-                <a href="../index.html">Mall</a>
-                <a href="./contact.html">Contact_Us</a>
+            <div class="nav">
+                <a href="../index.html">The Mall</a>
+                <a href="./store.html">YourStore</a>
+                <a href="./contact.html">Contact</a>
+        </div>
+        <div class="other-nav">
+            <div>
+                <i class="fa-sharp fa-solid fa-cart-shopping fa-shake " style="--fa-animation-delay:30s; --fa-animation-duration: 10s; color: #0b0349;"></i>
             </div>
-            <div class="cart">
-                <a href="#">Cart</a>
+            <div>
+                <i class="fa-solid fa-user" style="color: #0b0349;"></i>
             </div>
         </div>
-        <div class="space"></div>
+     </header>
+     <div class="nav-space"></div>
+    
         <!-- big picture side -->
         <div class="bg-p">
           <div class="bg">
@@ -49,9 +56,44 @@
         </div>
         <div class="space"></div>
         <div class="space"></div>
-        <div class="abt-footer">
-            <span>@2023 || David Jackson</span>
-        </div>
+
+        <footer class="m-footer">
+            <div class="main-footer">
+                <div class="about-m">
+                    <span>Follow Up</span>
+                    <div class="">
+                        <a href="#"><i class="fa-solid fa-envelope fa-2x"></i> Email</a>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i> LinkedIn</a>
+                        <a href="#"><i class="fa-brands fa-github fa-2x"></i> Github</a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i> Instagram</a>
+                        <a href="#"><i class="fa-brands fa-whatsapp fa-2x"></i> 0557466921</a>
+                    </div>
+                </div>
+                <div class="sendMessage">
+                    <div class="first-m">
+                        <label for="feedack">Please provide feedback for better performance</label>
+                        <textarea name="feedback" cols="6" rows="2" placeholder="give_feedback"></textarea>
+                        <div class="feed">
+                            <a href="#" class="feed-btn">send</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-ops">
+                    <h3>Accepted Payment Options</h3>
+                    <div class="">
+                        <span><i class="fa-solid fa-credit-card fa-3x"></i> Credit cards</span>
+                        <span><img src="../assets/mtn.png" alt=""> Mtn Momo</span>
+                        <span><img src="../assets/voda.png" alt=""> Voda Cash</span>
+                        <span><i class="fa-brands fa-paypal fa-4x" ></i> Paypal</span>
+                        <span><i class="fa-brands fa-apple-pay fa-5x"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>Lancaster Store</span>
+                <span>Copyright <i class="fa-regular fa-copyright"></i> 2023 David Jackson, The BlocV Inc.</span>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
