@@ -40,7 +40,7 @@ body{
     top: 0;
     z-index: 45454;
 }
-.head .main-logo span{
+.head .main-logo a{
     color: #323131;
     font-weight: bolder;
     font-size: 25px;
@@ -179,7 +179,7 @@ body{
 .nav-bar a{
     text-decoration: none;
     position: relative;
-    color: var(--color-2);
+    color: var(--color-1);
     font-family: var(--font-1);
     font-weight: 500;
 }
@@ -358,12 +358,17 @@ align-items: flex-start;
 .sec{
     position: relative;
     top: 0;
+    background-color: white;
+    width: 65%;
+    border-radius: 0.3em;
+    padding: 3px 0px;
 }
 .label{
     position: absolute;
+    font-weight: 500;
     top:0px;
     left: 5px;
-    color: var(--color-4);
+    color: var(--blue);
     transition: transform .5s ease;
     z-index: 455;
 }
@@ -373,6 +378,9 @@ align-items: flex-start;
     height: 30px;
     padding-left:5px ;
     z-index: 455455;
+    position: absolute;
+    top: 0;
+    background: transparent;
 }
 .sec input:focus~.label,
 .sec input:valid~.label{
@@ -380,12 +388,12 @@ align-items: flex-start;
     color: white;
 }
 .form-btn>a:nth-child(1){
-   color: var(--color-4);
+   color: rgb(220, 84, 84);
    text-decoration: none;
    position: relative;
    top:-20px;
     border: none;
-    width: fit-content;
+    font-weight: bold;
     padding: 3px 6px;
     background-color: #fff;
     border-radius: 5px;

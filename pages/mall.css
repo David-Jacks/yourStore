@@ -42,11 +42,12 @@ body{
     background-color: var(--bg);
     z-index: 45454;
 }
-.head .main-logo span{
-    color: #494747;
+.head .main-logo a{
+    color: #323131;
     font-weight: bolder;
     font-size: 25px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 .nav{
     width: 50%;
